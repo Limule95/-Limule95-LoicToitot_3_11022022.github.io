@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @import "../Composants/main-header";
+}
+.header-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    position: absolute;
+    left: 5%;
+    color: black;
+
+    .fa-arrow-left {
+      font-size: 20px;
+      transform: scale(1);
+      transition-property: transform;
+      transition-duration: 400ms;
+
+      &:hover {
+        transform: scale(1.5);
+        background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

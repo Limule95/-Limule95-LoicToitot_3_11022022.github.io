@@ -1,0 +1,65 @@
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .navigation {
+      display: flex;
+      a {
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    }
+    .notification {
+      position: relative;
+      padding-right: 10px;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contenent-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      article {
+        position: relative;
+        width: 45%;
+      }
+    }
+  }
+  .menu-a {
+    .contenent {
+      background-color: #f6f6f6;
+
+      .contenent-sections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .bloc-menu {
+          width: 30%;
+        }
+      }
+    }
+
+    .button {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    .liens {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      justify-content: space-around;
+    }
+  }
+}

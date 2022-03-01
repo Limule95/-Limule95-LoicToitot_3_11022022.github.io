@@ -1,0 +1,94 @@
+$color-primaire: #9356dc;
+$color-secondaire: #ff79da;
+$color-tertiaire: #99e2d0;
+$bg-color: white;
+
+$num-bars: 5;
+$num-titre: 1;
+$anim-dur: 1500ms;
+$anim-delay: $anim-dur / $num-bars;
+
+@mixin titre-main {
+  font-size: 25px;
+  font-family: Roboto;
+  font-weight: 900;
+}
+@mixin texte-main {
+  font-size: 17px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+@mixin titre-article {
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 900;
+  color: black;
+}
+@mixin texte-article {
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: black;
+}
+@mixin titre-footer {
+  color: #fff;
+  font-size: 17px;
+  font-family: Shrikhand;
+  margin: 0px 0px 10px 0px;
+  font-weight: 100;
+}
+@mixin titre-page {
+  font-family: Shrikhand;
+  font-weight: 100;
+  font-size: 27px;
+  color: black;
+}
+@mixin titre-menu {
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 600;
+  color: black;
+}
+@mixin texte-menu {
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
+}
+@mixin button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+
+  .button__link {
+    padding: 15px 25px 15px 25px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: none;
+    font-family: Roboto;
+    font-weight: bold;
+    background: rgb(147, 86, 220);
+    background: linear-gradient(
+      350deg,
+      rgba(147, 86, 220, 1) 0%,
+      rgba(255, 121, 218, 1) 100%
+    );
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 2px 5px 7px rgb(192, 187, 187);
+    transition: 0.5s ease;
+
+    &:hover {
+      box-shadow: 2px 5px 7px rgb(109, 109, 109);
+      transition: 0.5s ease;
+      transform: scale(1.02);
+    }
+  }
+}

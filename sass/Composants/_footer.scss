@@ -1,0 +1,21 @@
+h2 {
+  @include titre-footer;
+}
+
+.liens {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+  }
+
+  i {
+    margin-right: 10px;
+    font-size: 10px;
+    font-weight: 900;
+  }
+}

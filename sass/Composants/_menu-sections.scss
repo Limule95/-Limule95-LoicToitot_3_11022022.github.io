@@ -1,0 +1,158 @@
+@keyframes bars {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@for $i from 1 through $num-bars {
+  .contenent-sections .bloc-menu .menu:nth-of-type(#{$i}) {
+    animation-delay: $anim-delay * $i;
+  }
+}
+
+.contenent {
+  position: relative;
+  margin-top: -100px;
+  border-top-right-radius: 45px;
+  border-top-left-radius: 45px;
+  background-color: rgb(246, 246, 246);
+  padding: 20px 20px 0px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .titre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    h1 {
+      @include titre-page;
+      margin: 0;
+    }
+    .icon-coeur {
+      @import "../Composants/icon-coeur";
+      margin-left: 40px;
+      cursor: pointer;
+    }
+  }
+  .contenent-sections {
+    width: 100%;
+    .bloc-menu {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      h2 {
+        @include titre-article;
+        font-weight: 300;
+        font-size: 17px;
+        width: 150px;
+        line-height: 2;
+        position: relative;
+        margin-top: 10px;
+        animation: bars $anim-dur forwards;
+      }
+
+      h2::after {
+        content: "";
+        position: absolute;
+        background-color: $color-tertiaire;
+        width: 40px;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+      }
+
+      .menu {
+        overflow: hidden;
+        box-sizing: border-box;
+        opacity: 0;
+        // animation: forwards;
+        animation-duration: $anim-dur;
+        animation-name: bars;
+        animation-fill-mode: forwards;
+        a {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 0px;
+          position: relative;
+          overflow: hidden;
+          box-sizing: border-box;
+        }
+
+        &__texte {
+          overflow: hidden;
+          &__texte,
+          h3 {
+            @include titre-menu;
+            margin: 10px 0px 5px 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          &__texte,
+          p {
+            @include texte-menu;
+            margin: 0px 0px 10px 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+
+      .menu:hover {
+        box-shadow: 0px 10px 15px #b1b1b1;
+      }
+
+      .menu:hover .check-icon {
+        opacity: 1;
+        margin-right: 0px;
+        transition: all 0.5s;
+      }
+      .menu:hover .check-icon .fa-solid {
+        transform: rotate(360deg);
+        transition: transform 1000ms ease-in-out;
+      }
+
+      span {
+        margin-left: auto;
+        display: flex;
+        align-items: flex-end;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        @include texte-menu;
+        font-weight: 700;
+      }
+      .check-icon {
+        position: relative;
+        background-color: $color-tertiaire;
+        min-width: 70px;
+        height: 70px;
+        margin-right: -70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        transition: transform 700ms ease-in-out;
+        opacity: 0;
+
+        .fa-solid {
+          color: white;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

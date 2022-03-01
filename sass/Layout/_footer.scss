@@ -1,0 +1,10 @@
+footer {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #323232;
+  box-sizing: border-box;
+  @import "../Composants/footer";
+}

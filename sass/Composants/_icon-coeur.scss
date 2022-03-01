@@ -1,0 +1,44 @@
+.icon-coeur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  .fa-heart {
+    font-size: 30px;
+  }
+  .fa-regular {
+    position: absolute;
+    opacity: 1;
+    transition: 1s ease-in;
+  }
+  .fa-solid {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-out;
+    width: 0px;
+    height: 0px;
+    background: -moz-linear-gradient(top, #ff79da 15%, #9356dc 100%);
+    background: -webkit-linear-gradient(top, #ff79da 15%, #9356dc 100%);
+    background: linear-gradient(20deg, #ff79da 15%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:hover {
+    .fa-regular {
+      opacity: 0;
+      transition: 0.5s ease-out;
+    }
+    .fa-solid {
+      position: absolute;
+      transition: 1s ease;
+      width: 45px;
+      height: 45px;
+      border-radius: 1000%;
+    }
+  }
+}

@@ -9,7 +9,7 @@
   .fa-regular {
     position: absolute;
     opacity: 1;
-    transition: 1s ease-in;
+    transition: 500ms ease-in;
   }
   .fa-solid {
     position: absolute;
@@ -28,14 +28,14 @@
     -webkit-text-fill-color: transparent;
   }
 
-  &:hover {
+  &:active {
     .fa-regular {
       opacity: 0;
-      transition: 0.5s ease-out;
+      transition: 300ms ease-out;
     }
     .fa-solid {
       position: absolute;
-      transition: 1s ease;
+      transition: 500ms ease;
       width: 45px;
       height: 45px;
       border-radius: 1000%;

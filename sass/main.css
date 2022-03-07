@@ -464,8 +464,8 @@ section article a .box .fa-heart .icon-coeur .fa-heart {
 section article a .box .fa-heart .icon-coeur .fa-regular {
   position: absolute;
   opacity: 1;
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
+  -webkit-transition: 500ms ease-in;
+  transition: 500ms ease-in;
 }
 
 section article a .box .fa-heart .icon-coeur .fa-solid {
@@ -489,16 +489,16 @@ section article a .box .fa-heart .icon-coeur .fa-solid {
   -webkit-text-fill-color: transparent;
 }
 
-section article a .box .fa-heart .icon-coeur:hover .fa-regular {
+section article a .box .fa-heart .icon-coeur:active .fa-regular {
   opacity: 0;
-  -webkit-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
-section article a .box .fa-heart .icon-coeur:hover .fa-solid {
+section article a .box .fa-heart .icon-coeur:active .fa-solid {
   position: absolute;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
   width: 45px;
   height: 45px;
   border-radius: 1000%;
@@ -524,8 +524,8 @@ section .icon-coeur .fa-heart {
 section .icon-coeur .fa-regular {
   position: absolute;
   opacity: 1;
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
+  -webkit-transition: 500ms ease-in;
+  transition: 500ms ease-in;
 }
 
 section .icon-coeur .fa-solid {
@@ -549,16 +549,16 @@ section .icon-coeur .fa-solid {
   -webkit-text-fill-color: transparent;
 }
 
-section .icon-coeur:hover .fa-regular {
+section .icon-coeur:active .fa-regular {
   opacity: 0;
-  -webkit-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
-section .icon-coeur:hover .fa-solid {
+section .icon-coeur:active .fa-solid {
   position: absolute;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
   width: 45px;
   height: 45px;
   border-radius: 1000%;
@@ -703,8 +703,8 @@ section .icon-coeur:hover .fa-solid {
 .menu-a .contenent .titre .icon-coeur .icon-coeur .fa-regular {
   position: absolute;
   opacity: 1;
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
+  -webkit-transition: 500ms ease-in;
+  transition: 500ms ease-in;
 }
 
 .menu-a .contenent .titre .icon-coeur .icon-coeur .fa-solid {
@@ -728,16 +728,16 @@ section .icon-coeur:hover .fa-solid {
   -webkit-text-fill-color: transparent;
 }
 
-.menu-a .contenent .titre .icon-coeur .icon-coeur:hover .fa-regular {
+.menu-a .contenent .titre .icon-coeur .icon-coeur:active .fa-regular {
   opacity: 0;
-  -webkit-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
-.menu-a .contenent .titre .icon-coeur .icon-coeur:hover .fa-solid {
+.menu-a .contenent .titre .icon-coeur .icon-coeur:active .fa-solid {
   position: absolute;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
   width: 45px;
   height: 45px;
   border-radius: 1000%;
@@ -930,8 +930,8 @@ section .icon-coeur:hover .fa-solid {
 .menu-a .icon-coeur .fa-regular {
   position: absolute;
   opacity: 1;
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
+  -webkit-transition: 500ms ease-in;
+  transition: 500ms ease-in;
 }
 
 .menu-a .icon-coeur .fa-solid {
@@ -955,16 +955,16 @@ section .icon-coeur:hover .fa-solid {
   -webkit-text-fill-color: transparent;
 }
 
-.menu-a .icon-coeur:hover .fa-regular {
+.menu-a .icon-coeur:active .fa-regular {
   opacity: 0;
-  -webkit-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
-.menu-a .icon-coeur:hover .fa-solid {
+.menu-a .icon-coeur:active .fa-solid {
   position: absolute;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
   width: 45px;
   height: 45px;
   border-radius: 1000%;

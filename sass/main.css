@@ -489,13 +489,13 @@ section article a .box .fa-heart .icon-coeur .fa-solid {
   -webkit-text-fill-color: transparent;
 }
 
-section article a .box .fa-heart .icon-coeur:active .fa-regular {
+section article a .box .fa-heart .icon-coeur:hover .fa-regular {
   opacity: 0;
   -webkit-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 
-section article a .box .fa-heart .icon-coeur:active .fa-solid {
+section article a .box .fa-heart .icon-coeur:hover .fa-solid {
   position: absolute;
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
@@ -549,13 +549,13 @@ section .icon-coeur .fa-solid {
   -webkit-text-fill-color: transparent;
 }
 
-section .icon-coeur:active .fa-regular {
+section .icon-coeur:hover .fa-regular {
   opacity: 0;
   -webkit-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 
-section .icon-coeur:active .fa-solid {
+section .icon-coeur:hover .fa-solid {
   position: absolute;
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
@@ -728,13 +728,13 @@ section .icon-coeur:active .fa-solid {
   -webkit-text-fill-color: transparent;
 }
 
-.menu-a .contenent .titre .icon-coeur .icon-coeur:active .fa-regular {
+.menu-a .contenent .titre .icon-coeur .icon-coeur:hover .fa-regular {
   opacity: 0;
   -webkit-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 
-.menu-a .contenent .titre .icon-coeur .icon-coeur:active .fa-solid {
+.menu-a .contenent .titre .icon-coeur .icon-coeur:hover .fa-solid {
   position: absolute;
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
@@ -955,13 +955,13 @@ section .icon-coeur:active .fa-solid {
   -webkit-text-fill-color: transparent;
 }
 
-.menu-a .icon-coeur:active .fa-regular {
+.menu-a .icon-coeur:hover .fa-regular {
   opacity: 0;
   -webkit-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 
-.menu-a .icon-coeur:active .fa-solid {
+.menu-a .icon-coeur:hover .fa-solid {
   position: absolute;
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
